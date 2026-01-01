@@ -1,0 +1,183 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 2rem;
+}
+
+.smugstudio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 600;
+    color: #EBF227 !important;
+    text-decoration: none;
+}
+
+.keyboard {
+    font-family: 'IBMPlexMono', monospace;
+    font-size: 1.5vw;
+    color: #EBF227 !important;
+    text-decoration: none;
+    margin-left: auto;
+
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #EBF227 !important;
+    z-index: 1000;
+}
+
+
+.socials {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.instagram,
+.youtube {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #EBF227 !important;
+    text-decoration: none;
+}
+
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #EBF227 !important;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+      padding-top: 60px;
+    padding-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .smugstudio {
+        font-size: 1.5rem; 
+    }
+
+    .keyboard {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        gap: 0.3rem;
+        font-size: 0.9rem;
+        text-align: center;
+        position: relative; 
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .instagram, .youtube {
+        font-size: 1rem;
+    }
+
+       main {
+        padding-top: 120px; 
+    }
+
+
+    .copyright {
+        font-size: 0.8rem; 
+        order: 2; 
+        margin-top: 0.5rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    header,
+    footer {
+        padding: 1.5rem 2rem;
+    }
+
+    .smugstudio {
+        font-size: 2.2vw;
+    }
+
+    .keyboard {
+        font-size: 2.2vw;
+    }
+
+    nav {
+        gap: 3rem;
+    }
+
+    footer {
+        font-size: 1.4vw;
+    }
+
+    .instagram,
+    .youtube {
+        font-size: 1.8vw;
+    }
+
+    .copyright {
+        font-size: 1.4vw;
+    }
+
+    main {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+}
+

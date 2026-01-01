@@ -1,0 +1,166 @@
+.indexbutton {
+  font-family: 'IBMPlexMono';
+  font-size: 1vw;
+  font-weight: 500;
+  background-color: #EBF227;
+  color: #510273;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 2vw;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.25s ease;
+  margin-top: 3vw;
+}
+
+.indexbutton:hover {
+  background-color: #0489D6;
+  color: #F296C4;
+  transform: translateY(-2px);
+}
+
+
+
+.choose {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  height: 20vw;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+
+
+.choose {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+  main {
+    padding: 2rem;
+  }
+
+  .choose {
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+  }
+
+  .hero {
+    gap: 5vw;
+  }
+
+  .hero img {
+    height: 30vw;
+  }
+
+  .indexbutton {
+    font-size: 2vw;
+    padding: 16px 32px;
+    border-radius: 4vw;
+    margin-top: 4vw;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  .socials {
+    gap: 2rem;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  main {
+    padding: 1rem;
+  }
+
+
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero img {
+    width: 60vw;
+    height: 60vw;
+  }
+
+
+  .indexbutton {
+    font-size: 4vw;
+    padding: 16px 32px;
+    border-radius: 10vw;
+    margin-top: 5vw;
+  }
+
+
+  .choose {
+    font-size: 5vw;
+    margin-bottom: 2rem;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,30 @@
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 3rem auto; 
+    justify-items: center; 
+}
+
+
+.poster {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.poster-grid .poster:first-child {
+    grid-column: 1 / -1;  
+    max-width: 1000px;   
+    justify-self: center; 
+}
+
+.poster-grid .poster:not(:first-child) {
+    max-width: 380px;
+}
+
+header {
+  display: none;
+}
+

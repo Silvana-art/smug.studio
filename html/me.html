@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/me.css">
+    <link rel="stylesheet" href="../style/headerfooter.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lcc1rge.css">
+    <title>smug studio</title>
+</head>
+
+<body class="page-enter">
+
+    <header>
+        <script>
+            const savedBgColor = localStorage.getItem('bgColor');
+            const savedH1Color = localStorage.getItem('h1Color');
+
+            if (savedBgColor) document.body.style.backgroundColor = savedBgColor;
+            if (savedH1Color) {
+                const h1 = document.querySelector('h1');
+                if (h1) h1.style.color = savedH1Color;
+            }
+
+            const button = document.querySelector('.indexbutton');
+            if (button && savedBgColor && savedH1Color) {
+                button.style.backgroundColor = savedH1Color;
+                button.style.color = savedBgColor;
+            }
+        </script>
+
+        <nav>
+            <a class="smugstudio" href="../index.html">smug.studio</a>
+            <a class="keyboard" href="../html/keyboard.html">keyboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="metext">
+            <h1 class="title">me</h1>
+            <p>I’am a multimedia producer, based in bern.
+                <br>
+                i have special interest in graphic design, videography and everything that's a little bit artsy
+            </p>
+
+        </section>
+        <section class="image">
+            <img src="../img/me1.jpg" alt="Porträt von mir">
+            <img src="../img/me2.jpg" alt="Ich beim Filmen">
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p class="copyright">copyright © 2025 Silvana Waser</p>
+        <section class="socials">
+            <a class="instagram" href="https://www.instagram.com/silvanajanine.portfolio">Instagram</a>
+            <a class="youtube" href="https://www.youtube.com/@SilvanaJanine">YouTube</a>
+        </section>
+    </footer>
+
+
+    <script type="module" src="../script/me.js"></script>
+    <script type="module" src="../script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* bei Verwendung von Google Fonts über import, ist ein Cookie Banner schon Pflicht. Lädt man die Schrift korrekt herunter, bracht es keinen Cookie Banner */
+
+
+
+/* weight
+300: thin
+400: regular
+500: medium
+600: semibold
+700: bold
+800: extrabold
+900: black
+*/ 
+
+/*IBM Plex Mono*/
+@font-face {
+    font-family: 'IBMPlexMono' ;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Regular.eot');
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexMono-Regular.woff2') format('woff2'),
+    url('../fonts/IBMPlexMono-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono' ;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Bold.eot');
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
+    url('../fonts/IBMPlexMono-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono' ;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Medium.eot');
+    src: url('../fonts/AnyConv.com__IBMPlexMono-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexMono-Medium.woff2') format('woff2'),
+    url('../fonts/IBMPlexMono-Medium.woff') format('woff');
+}
+
+
+

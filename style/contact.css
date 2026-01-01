@@ -1,0 +1,280 @@
+ul {
+  font-family: 'IBMPlexMono';
+  font-weight: 500;
+  font-size: 2vw;
+  list-style: none;
+  padding: 0;
+}
+
+.right-list {
+  position: absolute;
+  top: 50%;
+  right: 2vw;
+  transform: translateY(-50%);
+}
+
+.right-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.right-list li {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.right-list li:hover {
+  transform: translateX(-10px);
+}
+
+.contact {
+  display: flex;
+  align-items: flex-end;
+  transform: translateX(40vw);
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.contactimage {
+  width: 20vw;
+  max-width: 100%;
+  height: auto;
+  padding-left: 2vw;
+  position: relative;
+  z-index: 1;
+}
+
+.contact ul {
+  text-align: right;
+}
+
+main {
+  padding-top: 0 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 100vw;
+  padding: 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+main > section:last-of-type {
+  margin-top: auto;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.titleflex {
+  margin-top: auto;
+  text-align: left;
+}
+
+.animation {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  z-index: 2;
+}
+
+.animation img {
+  width: 60vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.contact ul li a:hover {
+  transform: translateX(-10px);
+}
+
+p {
+  font-family: 'IBMPlexMono';
+  font-weight: 500;
+  font-size: 2vw;
+  color: #0489D6;
+  transition: color 0.5s ease;
+}
+
+@media only screen and (max-width: 480px) {
+
+  ul,
+  p,
+  .right-list ul,
+  .contact ul li a {
+    font-size: 4vw;
+  }
+
+  header {
+    position: relative;
+    z-index: 5;
+  }
+
+  main {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .contactimage {
+    width: 60vw;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .contact ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact ul li a:hover {
+    transform: translateX(0);
+  }
+
+  .right-list {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  .right-list ul {
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .animation {
+    position: relative;
+    width: 80vw;
+    margin: 2rem auto 0 auto;
+    bottom: auto;
+    right: auto;
+    z-index: 1;
+  }
+
+  .animation img {
+    width: 100%;
+  }
+
+  .titleflex {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .socials {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  footer .socials a {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+
+  .right-list {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .right-list ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+    margin-top: 3rem;
+  }
+
+  .contact ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contactimage {
+    width: 45vw;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .animation {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 3rem auto 0 auto;
+    width: 70vw;
+  }
+
+  .animation img {
+    width: 100%;
+  }
+
+  ul,
+  p,
+  .right-list ul,
+  .contact ul li a {
+    font-size: 2.8vw;
+  }
+
+  main {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}

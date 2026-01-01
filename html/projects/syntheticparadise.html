@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/projectsunterseite.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lcc1rge.css">
+    <title>smugg studio</title>
+</head>
+
+<body>
+
+    <header>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const savedBgColor = localStorage.getItem('bgColor');
+                const savedH1Color = localStorage.getItem('h1Color');
+
+                if (savedBgColor) {
+                    document.body.style.backgroundColor = savedBgColor;
+                }
+
+                if (savedH1Color) {
+                    const h1 = document.querySelector('h1');
+                    if (h1) h1.style.color = savedH1Color;
+                }
+
+            });
+        </script>
+
+    </header>
+
+
+    <main>
+
+        <section>
+            <h1 class="title">synthetic paradise</h1>
+        </section>
+
+
+        <div class="video-container-large">
+            <iframe src="https://www.youtube.com/embed/bl9WHABju6E" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>

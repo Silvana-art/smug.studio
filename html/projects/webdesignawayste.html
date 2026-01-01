@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/projectsunterseite.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lcc1rge.css">
+    <title>smugg studio</title>
+</head>
+
+<body>
+
+    <header>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const savedBgColor = localStorage.getItem('bgColor');
+                const savedH1Color = localStorage.getItem('h1Color');
+
+                if (savedBgColor) {
+                    document.body.style.backgroundColor = savedBgColor;
+                }
+
+                if (savedH1Color) {
+                    const h1 = document.querySelector('h1');
+                    if (h1) h1.style.color = savedH1Color;
+                }
+
+            });
+
+            
+        </script>
+
+
+     
+    </header>
+
+
+    <main>
+
+        <section>
+            <h1 class="title">webdesign awayste</h1>
+            <p>open the website</p>
+        </section>
+
+
+        <div class="video-container-large">
+            <iframe
+                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/3N50gmjT9zZa0UIHAFJ4E8/Awayste-Mockup?page-id=0%3A1&node-id=346-311&p=f&viewport=1045%2C372%2C0.04&t=XU1diAhlrws1S3Ar-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=346%3A311"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>

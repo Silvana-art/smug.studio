@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/islandplakatlinda.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lcc1rge.css">
+    <title>smugg studio</title>
+</head>
+
+<body>
+    <header>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const savedBgColor = localStorage.getItem('bgColor');
+                const savedH1Color = localStorage.getItem('h1Color');
+
+                if (savedBgColor) {
+                    document.body.style.backgroundColor = savedBgColor;
+                }
+
+                if (savedH1Color) {
+                    const h1 = document.querySelector('h1');
+                    if (h1) h1.style.color = savedH1Color;
+                }
+
+            });
+
+
+        </script>
+
+    </header>
+    <main>
+        <section>
+            <h1 class="title">poster iceland</h1>
+        </section>
+        <div class="slideshow">
+            <span class="arrow arrow-left">&#10094;</span>
+            <span class="arrow arrow-right">&#10095;</span>
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/1_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/2_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/3_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/4_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/5_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/6_islandlinda.jpg" alt="Poster">
+            <img class="slide" src="../../img/projects/Unterseiten/Islandlinda/7_islandlinda.jpg" alt="Poster">
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">copyright © 2025 Silvana Waser</p>
+        <section class="socials">
+            <a class="instagram" href="https://www.instagram.com/silvanajanine.portfolio">Instagram</a>
+            <a class="youtube" href="https://www.youtube.com/@SilvanaJanine">YouTube</a>
+        </section>
+    </footer>
+    <script>
+
+
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        console.log("Anzahl Bilder gefunden:", slides.length);
+
+        function showSlide(index) {
+            console.log("Zeige Bild Index:", index);
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            if (slides[index]) {
+                slides[index].classList.add('active');
+                console.log("Bild angezeigt");
+            }
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        document.querySelector(".arrow-right").addEventListener("click", nextSlide);
+        document.querySelector(".arrow-left").addEventListener("click", prevSlide);
+
+        showSlide(slideIndex);
+
+
+
+
+    </script>
+</body>
+
+</html>
